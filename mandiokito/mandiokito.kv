@@ -1,10 +1,46 @@
 <Gerenciador>
-    Screen:
+    TelaInicial:
         BoxLayout:
             orientation: 'vertical'
+            Label:
+                canvas:
+                    Color:
+                        rgb: (0.0, 0.6, 0.0)
+
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                text: "Hello"
             BoxLayout:
                 orientation: 'horizontal'
-                Label:
-                    text: "Álefe"
-                Label:
-                    text: "Moreira"
+                height: "45 dp"
+                size_hint_y: None
+                Button:
+                    text: "Registrar"
+                    on_release:
+                        app.root.current='registrar'
+
+                Button:
+                    text: "Atualizar"
+                    on_release:
+                        app.root.current='atualizar'
+
+                Button:
+                    text: "Apagar"
+                    on_release:
+                        app.root.current='apagar'
+
+    Registrar:
+        name: "registrar"
+        Label:
+            text: "Registrar"
+
+    Apagar:
+        name: "apagar"
+        Label:
+            text: "Apagar"
+
+    Atualizar:
+        name: "atualizar"
+        Label:
+            text: "Atualizar"

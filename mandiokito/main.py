@@ -1,6 +1,6 @@
 from kivy.app import App
-from kivy.uix.screenmanager import ScreenManager, Screen
-#import telas
+from kivy.uix.screenmanager import ScreenManager, Screen    
+from telas import *
 
 class Gerenciador(ScreenManager):
     def __init__(self, **kw):
