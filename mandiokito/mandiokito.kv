@@ -2,15 +2,20 @@
     TelaInicial:
         BoxLayout:
             orientation: 'vertical'
-            Label:
-                canvas:
-                    Color:
-                        rgb: (0.0, 0.6, 0.0)
+            MapView:
+                zoom: 11
+                lat: 50.6394
+                lon: 3.057
 
-                    Rectangle:
-                        size: self.size
-                        pos: self.pos
-                text: "Hello"
+            #Label:
+            #    canvas:
+            #        Color:
+            #            rgb: (0.0, 0.6, 0.0)
+
+            #        Rectangle:
+            #            size: self.size
+            #            pos: self.pos
+            #    text: "Hello"
             BoxLayout:
                 orientation: 'horizontal'
                 height: "45 dp"
@@ -29,6 +34,10 @@
                     text: "Apagar"
                     on_release:
                         app.root.current='apagar'
+                Button:
+                    text: "Current Location"
+                    #size_hint_x: 25
+                    on_press: root.current_location()
 
     Registrar:
         name: "registrar"
