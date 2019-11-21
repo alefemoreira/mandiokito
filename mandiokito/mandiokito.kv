@@ -1,5 +1,6 @@
 <Gerenciador>
     TelaInicial:
+        name: "Tela_Inicial"
         BoxLayout:
             orientation: 'vertical'
             MapView:
@@ -41,8 +42,393 @@
 
     Registrar:
         name: "registrar"
-        Label:
-            text: "Registrar"
+        
+        BoxLayout:
+            id:'forms'
+            orientation: 'vertical'
+            ScrollView:
+                BoxLayout:
+                    id: 'box'
+                    size_hint_y: None
+                    height:self.minimum_height
+                    orientation: 'vertical'
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Nome do produtor"
+                                halign:"left"
+                            TextInput:
+                                size_hint_y:None
+                                height: "30sp"
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Apelido do produtor"
+                                halign:"left"
+                            TextInput:
+                                size_hint_y:None
+                                height: "30sp"
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Data de Nascimento"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Telefone"
+                                halign:"left"
+                            TextInput:
+                                size_hint_y:None
+                                height: "30sp"
+                    Label:
+                        size_hint_y:None
+                        height: "20sp"
+                        text:"Nome do estabelecimento"
+                        halign:"left"
+                    TextInput:
+                        size_hint_y:None
+                        height: "30sp"
+
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Endereço"
+                                halign:"left"
+                            TextInput:
+                                size_hint_y:None
+                                height: "30sp"
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Área"
+                                halign:"left"
+                            TextInput:
+                                size_hint_y:None
+                                height: "30sp"
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20 sp"
+                                text: 'Característica da propriedade:'
+                            Spinner:
+                                size_hint_y: None
+                                height: '30dp'
+                                text: 'Selecione'
+                                values: 'Própria', 'Arrendada', 'Posse Mansa', 'Posse em Conflito'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text: 'Escolaridade:'
+                            Spinner:
+                                size_hint_y: None
+                                height: '30dp'
+                                text: 'Selecione'
+                                values: 'Alfabetizado', 'Fundamental I', 'Fundamental II', 'Ensino Médio', 'Ensino Técnico', 'Ensino Superior', 'Não teve acesso à escola'
+
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Quantas pessoas da família trabalham no estabelecimento:"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Quantas dessas são mulheres"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+                    #BoxLayout:
+                     #   orientation: 'vertical'
+                    Label:
+                        size_hint_y:None
+                        height: "20sp"
+                        text: 'Declaração de Aptidão ao Pronaf - DAP:'
+                    Spinner:
+                        size_hint_y: None
+                        height: '30dp'
+                        text: 'Selecione'
+                        values: 'SIM', 'NÃO'
+
+                    Label:
+                        size_hint_y:None
+                        height: "20sp"
+                        text: 'Coordenadas (UTM):'
+                    TextInput:
+                        size_hint_y:None
+                        height: "30sp"
+                    
+                    Label:
+                        size_hint_y:None
+                        height: "20sp"
+                        text: 'Pré Plantio'
+                    Label:
+                        size_hint_y:None
+                        height: "20sp"
+                        text: 'Tipo(s):'
+                    Spinner:
+                        size_hint_y: None
+                        height: '30dp'
+                        text: 'Selecione'
+                        values: 'Macaxeira', 'Mandioca', 'Ambas'
+                    
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Variedade Plantada"
+                                halign:"left"
+                            TextInput:
+                                size_hint_y:None
+                                height: "30sp"
+
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Área destinada ao plantio (em hectare):"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Tipo de Plantio"
+                                halign:"left"
+                            TextInput:
+                                size_hint_y:None
+                                height: "30sp"
+
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                #font_size:"20sp"
+                                text:"Há quantos anos trabalha com esse tipo de cultura?:"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Preparo do Solo"
+                                halign:"left"
+                            TextInput:
+                                size_hint_y:None
+                                height: "30sp"
+
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                #font_size:"20sp"
+                                text:"Tratos Culturais Antes do Plantio"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Preparo para o plantio"
+                                halign:"left"
+                            Spinner:
+                                size_hint_y: None
+                                height: '30dp'
+                                text: 'Selecione'
+                                values: 'Manual', 'Mecanizado'
+
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                #font_size:"20sp"
+                                text:"Mecanizado:"
+                                halign:"left"
+                            Spinner:
+                                size_hint_y: None
+                                height: '30dp'
+                                text: 'Selecione'
+                                values: 'Tração Animal', 'Trator', 'Nenhum'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                #font_size:"20sp"
+                                text:"Maquinario Agrícola"
+                                halign:"left"
+                            Spinner:
+                                size_hint_y: None
+                                height: '30dp'
+                                text: 'Selecione'
+                                values: 'Próprio', 'Alugado', 'Cedido'
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                #font_size:"20sp"
+                                text:"Custo, em reais R$ (se houver)"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                #font_size:"20sp"
+                                text:"N° de horas de uso do trator (se usar)"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Origem da maniva"
+                                halign:"left"
+                            Spinner:
+                                size_hint_y: None
+                                height: '30dp'
+                                text: 'Selecione'
+                                values: 'Autoprodução', 'Outro produtor', 'Doação'
+
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                #font_size:"20sp"
+                                text:"Valor da unidade da maniva"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+                    Label:
+                        text: 'Plantio'
+                    BoxLayout:
+                        size_hint_y:None
+                        height:'50sp'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                text:"Plantio"
+                                halign:"left"
+                            Spinner:
+                                size_hint_y: None
+                                height: '30dp'
+                                text: 'Selecione'
+                                values: 'Com leirão', 'Sem Leirão', 'Estaca em pé', 'Estaca em deitada', 'Estaca inclinada'
+
+                        BoxLayout:
+                            orientation: 'vertical'
+                            Label:
+                                size_hint_y:None
+                                height: "20sp"
+                                #font_size:"20sp"
+                                text:"Espaçamento utilizado"
+                                halign:"left"
+                            FloatInput:
+                                size_hint_y:None
+                                height: "30sp"
+                    
+                        #on_value:
+                        #    print: "The spinner {} has text {}".format(self, self.value)
+
+
+                    
+            BoxLayout:
+                name:'botoes'
+                orientation: 'horizontal'
+                height: "45 dp"
+                size_hint_y: None
+                Button:
+                    text:"Enviar"
+                Button:
+                    text:"Voltar"
+                    on_press: app.root.current="Tela_Inicial"
+
 
     Apagar:
         name: "apagar"

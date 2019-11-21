@@ -1,8 +1,10 @@
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager, Screen
+import re
 #from kivy.config import Config
 from telas import *
 from kivy.garden.mapview import MapView, MapMarker
+from kivy.uix.textinput import TextInput
 
 from kivy.clock import Clock, mainthread
 from kivy.uix.popup import Popup
@@ -17,6 +19,16 @@ from kivy.uix.label import Label
 #requirements = kivy,plyer
 
 #Config.read('config.ini')
+class FloatInput(TextInput):
+    pat = re.compile('[^0-9]')
+    def insert_text(self, substring, from_undo=False):
+        pat = self.pat
+        if '.' in self.text:
+            s = re.sub(pat, '', substring)
+        else:
+            s = '.'.join([re.sub(pat, '', s) for s in substring.split('.', 1)])
+        return super(FloatInput, self).insert_text(s, from_undo=from_undo)
+
 
 class Gerenciador(ScreenManager):
     def __init__(self, **kw):
