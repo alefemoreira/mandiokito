@@ -3,12 +3,12 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 import re
 #from kivy.config import Config
 from telas import *
-from kivy.garden.mapview import MapView, MapMarker
+#from kivy.garden.mapview import MapView, MapMarker
 from kivy.uix.textinput import TextInput
 
 from kivy.clock import Clock, mainthread
 from kivy.uix.popup import Popup
-from plyer import gps
+#from plyer import gps
 from kivy.uix.label import Label
 #import openssl
 

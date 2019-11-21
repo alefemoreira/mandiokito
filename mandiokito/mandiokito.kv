@@ -3,10 +3,10 @@
         name: "Tela_Inicial"
         BoxLayout:
             orientation: 'vertical'
-            MapView:
-                zoom: 11
-                lat: 50.6394
-                lon: 3.057
+            #MapView:
+            #    zoom: 11
+            #    lat: 50.6394
+            #    lon: 3.057
 
             #Label:
             #    canvas:
@@ -35,10 +35,10 @@
                     text: "Apagar"
                     on_release:
                         app.root.current='apagar'
-                Button:
-                    text: "Current Location"
-                    #size_hint_x: 25
-                    on_press: root.current_location()
+                #Button:
+                #    text: "Current Location"
+                #    #size_hint_x: 25
+                #    on_press: root.current_location()
 
     Registrar:
         name: "registrar"
