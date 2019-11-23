@@ -8,7 +8,7 @@
             #    lat: 50.6394
             #    lon: 3.057
 
-            #Label:
+            #LabelAdap:
             #    canvas:
             #        Color:
             #            rgb: (0.0, 0.6, 0.0)
@@ -19,7 +19,7 @@
             #    text: "Hello"
             BoxLayout:
                 orientation: 'horizontal'
-                height: "45 dp"
+                height: "45 sp"
                 size_hint_y: None
                 Button:
                     text: "Registrar"
@@ -57,907 +57,907 @@
                     orientation: 'vertical'
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
-                        Label:
+                        height:'80sp'
+                        LabelAdap:
                             text: 'Produtor'
                             font_size:"14sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Nome do produtor"
                                 halign:"left"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Apelido do produtor"
                                 halign:"left"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Data de Nascimento"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Telefone"
                                 halign:"left"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
-                    Label:
+                                height: "30sp"
+                    LabelAdap:
                         size_hint_y:None
-                        height: "20dp"
+                        height: "20sp"
                         font_size:"14sp"
                         text:"Nome do estabelecimento"
                         halign:"left"
                     TextInput:
                         size_hint_y:None
-                        height: "30dp"
+                        height: "30sp"
 
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Endereço"
                                 halign:"left"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Área"
                                 halign:"left"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
                                 height: "20sp"
                                 text: 'Característica da propriedade:'
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 font_size:"14sp"
                                 text: 'Selecione'
                                 values: 'Própria', 'Arrendada', 'Posse Mansa', 'Posse em Conflito'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text: 'Escolaridade:'
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Alfabetizado', 'Fundamental I', 'Fundamental II', 'Ensino Médio', 'Ensino Técnico', 'Ensino Superior', 'Não teve acesso à escola'
 
                     BoxLayout:
                         size_hint_y:None
-                        height:'60dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                                 font_size:"14sp"
                                 text:"Quantas pessoas da família \n trabalham no estabelecimento:"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Quantas dessas são mulheres"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                     #BoxLayout:
                      #   orientation: 'vertical'
-                    Label:
+                    LabelAdap:
                         size_hint_y:None
-                        height: "20dp"
+                        height: "20sp"
                         font_size:"14sp"
                         text: 'Declaração de Aptidão ao Pronaf - DAP:'
                     Spinner:
                         size_hint_y: None
-                        height: '30dp'
+                        height: '30sp'
                         text: 'Selecione'
                         values: 'SIM', 'NÃO'
 
-                    Label:
+                    LabelAdap:
                         size_hint_y:None
-                        height: "20dp"
+                        height: "20sp"
                         font_size:"14sp"
                         text: 'Coordenadas (UTM):'
                     TextInput:
                         size_hint_y:None
-                        height: "30dp"
+                        height: "30sp"
                     
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
-                        Label:
+                        height:'80sp'
+                        LabelAdap:
                             text: 'Pré Plantio'
                             font_size:"14sp"
-                    Label:
+                    LabelAdap:
                         size_hint_y:None
-                        height: "20dp"
+                        height: "20sp"
                         font_size:"14sp"
                         text: 'Tipo(s):'
                     Spinner:
                         size_hint_y: None
-                        height: '30dp'
+                        height: '30sp'
                         text: 'Selecione'
                         values: 'Macaxeira', 'Mandioca', 'Ambas'
                     
                     BoxLayout:
                         size_hint_y:None
-                        height:'60dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Variedade Plantada"
                                 halign:"left"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                                 font_size:"14sp"
                                 text:"Área destinada ao\n plantio (em hectare):"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'60dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Tipo de Plantio"
                                 halign:"left"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                                 font_size:"14sp"
                                 text:"Há quantos anos trabalha\n com esse tipo de cultura?:"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'60dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Preparo do Solo"
                                 halign:"left"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                                 font_size:"14sp"
                                 text:"Tratos Culturais \nAntes do Plantio"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Preparo para o plantio"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Manual', 'Mecanizado'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Mecanizado:"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Tração Animal', 'Trator', 'Nenhum'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Maquinario Agrícola"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Próprio', 'Alugado', 'Cedido'
                     BoxLayout:
                         size_hint_y:None
-                        height:'60dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Custo, em \n reais R$ (se houver)"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                                 font_size:"14sp"
                                 text:"N° de horas de \n uso do trator (se usar)"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
 
                     BoxLayout:
                         size_hint_y:None
-                        height:'60dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Origem da maniva"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Autoprodução', 'Outro produtor', 'Doação'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                                 font_size:"14sp"
                                 text:"Valor da unidade \nda maniva"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
-                        Label:
+                        height:'80sp'
+                        LabelAdap:
                             text: 'Plantio'
                             font_size:"14sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Plantio"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Com leirão', 'Sem Leirão', 'Estaca em pé', 'Estaca em deitada', 'Estaca inclinada'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Espaçamento utilizado"
                                 halign:"left"
                             FloatInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'78dp'
+                        height:'90sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "48dp"
+                                height: "48sp"
                                 font_size:"14sp"
                                 text:"Tratos culturais utilizados \ndurante o desenvolvimento da cultura:\n(Tratos e tipos)"
                                 halign:"left"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"A cultura sofre de praga? Qual?"
                                 halign:"center"
                                 walign:"center"
                             TextInput:
                                 size_hint_y:None
-                                height: "30dp"
+                                height: "30sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Utiliza irrigação"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Não', 'Sim'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Fonte de água"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Rio', 'Poço artesiano', 'Açude', 'Poço Amazonas(Cacimbão)'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Outoga d'água"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values:'Sim', 'Não'
 
                     BoxLayout:
                         size_hint_y:None
-                        height:'64dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Utiliza"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Bombeamento', 'Gravidade'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "34dp"
+                                height: "34sp"
                                 font_size:"14sp"
                                 text:"Sistema de Irrigação\n Ultilizado"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Aspersão', 'Micro Aspersão', 'Gotejamento'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Fonte de Energia"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values:'Elétrica (tarifa verde)', 'Limpa (Fotovoltaica)'
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
-                        Label:
+                        height:'80sp'
+                        LabelAdap:
                             text: 'Colheita e Pós Colheita'
                             font_size:"14sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Forma de colheita"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Manual/Familiar', 'Manual/Contratada', 'Mecanizada'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Venda de Produção"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
-                        Label:
+                        height:'80sp'
+                        LabelAdap:
                             text: 'Rumo dos resíduos'
                             font_size:"14sp"
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Cascas"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Descarta', 'Reutiliza'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Onde?"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Maniva"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Descarta', 'Reutiliza'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Onde?"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                     BoxLayout:
                         size_hint_y:None
-                        height:'64dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Água de Lavagem"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Trata', 'Descarta', 'Reutiliza'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "34dp"
+                                height: "34sp"
                                 font_size:"14sp"
                                 text:"Onde? \n(se não tratar)"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                     BoxLayout:
                         size_hint_y:None
-                        height:'64dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Água de Lavagem"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Trata', 'Descarta', 'Reutiliza'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "34dp"
+                                height: "34sp"
                                 font_size:"14sp"
                                 text:"Onde? \n(se não tratar)"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
 
                     BoxLayout:
                         size_hint_y:None
-                        height:'64dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Estimativa da produtividade\n (ton/ha)"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: '1-5', '6-10', '11-15', '16-20', '21-25', 'acima de 25'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "34dp"
+                                height: "34sp"
                                 font_size:"14sp"
                                 text:"Valor da tonelada comercializada\n (em reais R$)?"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
 
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Possui casa de farinha?"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'SIM', 'NÃO'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"A casa possui certicação?"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'SIM', 'NÃO'
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Faz o beneficiamento de algum produto"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'SIM', 'NÃO'
                     BoxLayout:
                         size_hint_y:None
-                        height:'64dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"se sim, qual?"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "34dp"
+                                height: "34sp"
                                 font_size:"14sp"
                                 text:"Quantidade (KG)"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Preço (R$)"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                     BoxLayout:
                         size_hint_y:None
-                        height:'64dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "34dp"
+                                height: "34sp"
                                 font_size:"14sp"
                                 text:"Destinação dos produtos\n beneficiados"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Se for mercado local,\n Qual a cidade?"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
 
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Possui Assistencia técnica?"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'SIM', 'NÃO'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Se sim, Qual?"
                                 halign:"left"
                             TextInput:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                     BoxLayout:
                         size_hint_y:None
-                        height:'50dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Utiliza crédito agrícola"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'SIM', 'NÃO'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"É usada em que?"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Custeio', 'Investimento', 'Não utilizo'
                     BoxLayout:
                         size_hint_y:None
-                        height:'64dp'
+                        height:'80sp'
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "34dp"
+                                height: "34sp"
                                 font_size:"14sp"
                                 text:"Esta vinculado\n a algum orgão"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'SIM', 'NÃO'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Se sim:"
                                 halign:"left"
                             Spinner:
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
                                 text: 'Selecione'
                                 values: 'Cooperativa', 'Associação'
 
                         BoxLayout:
                             orientation: 'vertical'
-                            Label:
+                            LabelAdap:
                                 size_hint_y:None
-                                height: "20dp"
+                                height: "20sp"
                                 font_size:"14sp"
                                 text:"Nome"
                                 halign:"left"
                             TextInput   :
                                 size_hint_y: None
-                                height: '30dp'
+                                height: '30sp'
             BoxLayout:
                 name:'botoes'
                 orientation: 'horizontal'
-                height: "45 dp"
+                height: "45 sp"
                 size_hint_y: None
                 Button:
                     text:"Enviar"
@@ -968,12 +968,12 @@
 
     Apagar:
         name: "apagar"
-        Label:
+        LabelAdap:
             font_size:"14sp"
             text: "Apagar"
 
     Atualizar:
         name: "atualizar"
-        Label:
+        LabelAdap:
             text: "Atualizar"
             font_size:"14sp"

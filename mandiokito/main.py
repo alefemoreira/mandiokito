@@ -10,6 +10,7 @@ from kivy.clock import Clock, mainthread
 from kivy.uix.popup import Popup
 #from plyer import gps
 from kivy.uix.label import Label
+from kivy.metrics import sp
 #import openssl
 
 #For buildoze spec
@@ -19,6 +20,19 @@ from kivy.uix.label import Label
 #requirements = kivy,plyer
 
 #Config.read('config.ini')
+class LabelAdap(Label):
+    def __init__(self,**kwargs):
+        super().__init__(**kwargs)
+        self.size_hint = (1, None)
+
+    def on_size(self,*args):
+        # vamos colocar um espaço de 10 sp
+        self.text_size = (self.width - sp(10), None)
+    
+    def on_texture_size(self,*args):
+        self.size = self.texture_size
+        self.height += sp(20)
+
 class FloatInput(TextInput):
     pat = re.compile('[^0-9]')
     def insert_text(self, substring, from_undo=False):
